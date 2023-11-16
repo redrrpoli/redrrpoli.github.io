@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Lato;
+    src: url(fonts/Lato.ttf);
+}
+
+body{
+    height: 100vh;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav.menu{
+    width: 6vh;
+    height: 100%;
+    background-color: #1B1D32;
+    padding: 40px 0px 40px 1%;
+    box-shadow: 4px 0 0 #262C50;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+ul{
+    height: 100vh;
+    list-style-type: none;
+}
+
+ul li.menu a{
+    color:  #ffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 25px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+
+ul li.menu a .icon > i{
+    font-size: 25px;
+}
+
+ul li.menu a .icon > i:hover{
+    font-size: 35px;
+}
+
+ul li.menu{
+    transition: .3s;
+}
+
+.map{
+    margin: auto 60px;
+    width: 100vw;
+    height: 100vh;
+}
+
+dialog::backdrop {
+    background-color: #ffff;
+}
+dialog {
+    border: none;
+    margin: 80vh auto;
+    border-radius: .5rem;
+    width: 70vw;
+    text-align: center;
+    box-shadow: 0 0 .3em black;
+}
+
+p{
+    font-family: sans-serif,Arial, Helvetica;
+}
+
+button {
+    border: none;
+    margin-left: 98%;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.537);
+    cursor: pointer;
+}
+
+.scroll {
+    margin: auto;
+    margin-top: 10vh;
+    width: 600px;
+    height: 500px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.scroll li {
+    font-size: 20px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contato {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-right: 23vw;
+    margin-left: 25vw;
+    box-shadow: 0px 0px 20px 1px;
+    border-radius: 10px;
+    padding: 50px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.contato li{
+    padding: 10px;
+    list-style-type: none;
+}
+
+.contato i {
+    color: black;
+    margin: 20px;
+}
+
+.formulario{
+    display: flex;
+    margin-left: 30vw;
+    margin-top: 15vh;
+}
+
+img{
+    width: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .contato{
+        width:100%;
+        flex-direction: column;
+    }  
+}
